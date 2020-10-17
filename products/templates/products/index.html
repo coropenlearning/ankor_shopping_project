@@ -1,4 +1,17 @@
-<h1>Product List</h1>
 
-<p>iPhone</p>
-<a href="http://localhost:7000/pass=18454549r4">Order</a>
+{% extends 'products/main.html' %}
+{% load static %}
+{% block 'body' %}
+
+    <div class="px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+        <h1 class="display-4">Product List</h1>
+    </div>
+
+    <p>iPhone 12 Max (new)</p>
+
+    <img src="{% static 'products/iphone12max.jpg' %}" >
+
+    <br />
+    <a href="http://localhost:7000/pass=18454549r4">Order</a>
+
+{% endblock %}
